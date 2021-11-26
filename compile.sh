@@ -4,7 +4,7 @@ end_time="$(date -u +%s.%N)"
 
 
 CFLAGS="-Wall -g"
-ficheros=`ls *.c`
+files=`ls *.c`
 
 bin=`ls bin 2> /dev/null`
 status=$?
@@ -17,10 +17,10 @@ else
 fi
 
 echo "[+] Files to compile:"
-echo $ficheros
+echo $files
 echo ""
 
-for i in ${ficheros}
+for i in ${files}
 do
 	cc $CFLAGS $i -o bin/${i%.*}
 done
