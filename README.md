@@ -6,4 +6,4 @@
 
 This is a repository of my C projects as I learn the language.
 
-### Learn C the Hard Way
+### Learn C the Hard Way: 
